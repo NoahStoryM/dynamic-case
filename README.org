@@ -1,0 +1,12 @@
+#+TITLE: Dynamic Case
+#+AUTHOR: Noah Ma
+#+EMAIL: noahstorym@gmail.com
+
+* Table of Contents                                       :TOC_5_gh:noexport:
+- [[#raco-pkg-install-dynamic-case][raco pkg install dynamic-case]]
+
+* raco pkg install dynamic-case
+
+#+begin_src racket
+(require dynamic-case)
+#+end_src
