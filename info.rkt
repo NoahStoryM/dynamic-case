@@ -1,7 +1,7 @@
 #lang info
 
 (define license 'MIT)
-(define collection "dynamic-case")
+(define collection "case")
 (define version "0.0")
 
 (define pkg-desc "Dynamic Case")

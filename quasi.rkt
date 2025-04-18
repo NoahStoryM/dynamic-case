@@ -3,8 +3,8 @@
 (require (for-syntax racket/base syntax/parse)
          racket/match)
 
-(provide case*
-         (rename-out [case* case*/equal])
+(provide (rename-out [case*/equal case*])
+         case*/equal
          case*/equal-always
          case*/eq
          case*/eqv)
@@ -26,7 +26,7 @@
          ...
          [_ x* ...]))]))
 
-(define-syntax case*
+(define-syntax case*/equal
   (make-case* #'equal?))
 (define-syntax case*/equal-always
   (make-case* #'equal-always?))

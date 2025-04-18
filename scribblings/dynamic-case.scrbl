@@ -1,9 +1,9 @@
 #lang scribble/manual
 
-@(require (for-label racket/base dynamic-case))
+@(require (for-label racket/base case/quasi))
 
 @title{Dynamic Case}
-@defmodule[dynamic-case #:packages ("dynamic-case")]
+@defmodule[case/quasi #:packages ("dynamic-case")]
 @author[@author+email["Noah Ma" "noahstorym@gmail.com"]]
 
 @section{Variants of @racket[case*]}

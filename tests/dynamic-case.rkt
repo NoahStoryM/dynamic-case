@@ -1,6 +1,6 @@
 #lang racket/base
 
-(require "../main.rkt" rackunit)
+(require "../quasi.rkt" rackunit)
 
 
 (for ([p (in-list (list (cons  '- "symbol")
