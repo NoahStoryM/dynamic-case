@@ -17,9 +17,9 @@
      (syntax/loc stx (void v))]
     [(_ v [else e* ...+])
      (syntax/loc stx (begin v (let () e* ...)))]
-    [(self v [(k ...) e* ...+] ...)
+    [(self v [(k ...+) e* ...+] ...)
      (syntax/loc stx (self v [(k ...) e* ...] ... [else (void)]))]
-    [(_ v [(k ...) e* ...+] ... [else x* ...+])
+    [(_ v [(k ...+) e* ...+] ... [else x* ...+])
      (quasisyntax/loc stx
        (match v
          [(or (== `k #,compare-id) ...) e* ...]
